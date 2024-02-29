@@ -1,0 +1,177 @@
+body {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-areas: "section main";
+  background-color: white;
+}
+
+section#left {
+  grid-area: section;
+  background-image: url(../images/nicole.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+section#left div {
+  display: flex;
+}
+
+section#left div img {
+  width: 10%;
+  height: 10%;
+  margin: 5% 0;
+}
+
+section#left div h1 {
+  margin: 0 5%;
+  width: 1rem;
+  color: white;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline blue 1px;
+  text-transform: uppercase;
+}
+
+section#sommaire {
+  background-color: rgba(10, 10, 10, 0.5);
+  padding: 2%;
+  color: white;
+  text-align: end;
+  margin: 29% 2%;
+}
+
+section#sommaire strong {
+  font-weight: bolder;
+}
+
+section#sommaire h2 {
+  font-weight: 500;
+}
+
+section#sommaire span {
+  font-weight: 100;
+  font-style: italic;
+}
+
+section#left footer {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+section#left footer a {
+  color: white;
+  margin: 1rem;
+}
+main {
+  grid-area: main;
+}
+
+main.home {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "news1 news2"
+    "news3 news4"
+    "news5 news6";
+  margin: auto;
+}
+
+article {
+  padding: 3%;
+  background-color: #f9f9f9;
+  border: solid rgb(0, 0, 0, 0.1);
+}
+
+main.home h1 {
+  font-weight: 500;
+}
+
+main.home header {
+  grid-area: header;
+}
+
+article.news1 h3,
+article.news6 h3 {
+  background-color: #98dc62;
+  display: flex;
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 3%;
+  width: fit-content;
+}
+
+article.news2 h3,
+article.news3 h3 {
+  background-color: #dc5e53;
+  display: flex;
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 3%;
+  width: fit-content;
+}
+
+article.news4 h3,
+article.news5 h3 {
+  background-color: #0766f0;
+  display: flex;
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 3%;
+  width: fit-content;
+}
+
+main article h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: black;
+  text-align: start;
+}
+
+main article div {
+  display: flex;
+}
+
+article img {
+  width: 10%;
+  height: 10%;
+  margin: 0 2%;
+}
+
+article h4 {
+  font-size: 1.2rem;
+}
+
+article h4 span {
+  font-size: 1.2rem;
+  color: rgb(128, 128, 128);
+  font-weight: 500;
+}
+
+article a {
+  text-decoration: underline blue;
+  margin: auto;
+  display: flex;
+}
+
+img.image_entreprise {
+  width: 50%;
+  margin: 2% auto;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  border: solid black;
+}

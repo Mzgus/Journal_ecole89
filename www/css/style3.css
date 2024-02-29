@@ -1,0 +1,108 @@
+body {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-areas: "section main";
+  background-color: white;
+  overflow-y: scroll;
+}
+
+section#left {
+  grid-area: section;
+  background-image: url(../images/nicole.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+section#left div {
+  display: flex;
+}
+
+section#left div img {
+  width: 10%;
+  height: 10%;
+  margin: 5% 0;
+}
+
+section#left div h1 {
+  margin: 0 5%;
+  width: 1rem;
+  color: white;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline blue 1px;
+  text-transform: uppercase;
+}
+
+section#sommaire {
+  background-color: rgba(10, 10, 10, 0.5);
+  padding: 2%;
+  color: white;
+  text-align: end;
+  margin: 29% 2%;
+}
+
+section#sommaire strong {
+  font-weight: bolder;
+}
+
+section#sommaire h2 {
+  font-weight: 500;
+}
+
+section#sommaire span {
+  font-weight: 100;
+  font-style: italic;
+}
+
+section#left footer {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+section#left footer a {
+  color: white;
+  margin: 1rem;
+}
+
+main {
+  margin: 3%;
+}
+
+main h1 {
+  font-size: 4rem;
+}
+
+form {
+  margin: 2% 0;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+form div {
+  margin: 4% 0;
+}
+form input {
+  width: 100%;
+  padding: 1%;
+}
+
+form textarea {
+  width: 100%;
+}
+button {
+  background-color: rgba(13, 110, 253, 255);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: hidden;
+}
+
+main a {
+  text-decoration: underline rgba(13, 110, 253, 255);
+}
